@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Vision</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="css/accomodation.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div id="navbar-right">
+    <a class="active" href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tells.html">Tells</a>
+  </div>
+    <div class="logo">
+    <img src="images/logo.jpg" height="150" width="150" id="logo" alt="logo"></a>
+    </div>
+  <div id="navbar-left">
+    <a href="tips.html">Tips for Trips</a>
+    <a href="aventures.html">Aventures</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</div>
+<br>
+  <div class="filter_buttons">
+    <!--Filter Buttons-->
+    <button class="activeF" data-name="all">All Posts</button>
+    <button data-name="resorts">Resorts</button>
+    <button data-name="hostels">Hostels</button>
+    <button data-name="hotels">Hotels</button>
+    <button data-name="bars">Bar & Restaurants</button>
+  </div>
+  <!--Images Cards-->
+  <div class="filterable_cards">
+    <div class="card" data-name="resorts">
+      <img src="images/penisula.jpg" alt="resorts">
+      <div class="card_body">
+        <h6 class="card_title">The Penisula</h6>
+        <h6 class="card_text">New York , USA</h6>
+        <a href="https://www.peninsula.com/en/new-york/special-offers/rooms/suite-escape" target="_blank"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card" data-name="resorts">
+      <img src="images/hge.jpg" alt="resorts">
+      <div class="card_body">
+        <h6 class="card_title">Grand Europa Resort</h6>
+        <h6 class="card_text">Velipoje , Shkoder , Albania</h6>
+        <a href="https://velipojagrandeuroparesort.com/" target="_blank"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card" data-name="hotels">
+      <img src="images/delphin.png" alt="hotels">
+      <div class="card_body">
+        <h6 class="card_title">Delphin Imperial</h6>
+        <p class="card_text">Antalya, Turkey</p>
+        <a href="https://www.delphinhotel.com/en/delphin-imperial" target="_blank"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card" data-name="hotels">
+      <img src="images/shangri-la.jpg" alt="hotels">
+      <div class="card_body">
+        <h6 class="card_title">Shangri-La</h6>
+        <p class="card_text">Dubai ,The Emirates Unites Arabes</p>
+        <a href="https://www.shangri-la.com/en/dubai/shangrila/?WT.mc_id=SLDB_220415_AE_SEM_GOOGLE_AON_GENERIC_EXACT-TEXTLINK_EN_Tier-2-RSA-5%20star%20hotels%20downtown%20dubai&gad_source=1&gclid=EAIaIQobChMI4pLrs5W9hgMVm5CDBx0-4iNhEAAYAiAAEgJRIvD_BwE&gclsrc=aw.ds" target="_blank"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card" data-name="hostels">
+      <img src="images/Oxhaku.png" alt="hostels">
+      <div class="card_body">
+        <h6 class="card_title">Bujtina Oxhaku</h6>
+        <p class="card_text">Korce , Albania</p>
+        <a href="https://www.bujtinaoxhaku.al/" target="_blank"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card" data-name="bars">
+      <img src="images/prado.png" alt="bars">
+      <div class="card_body">
+        <h6 class="card_title">Prado</h6>
+        <p class="card_text">Livadh-Himare, Albania</p>
+       <a href="https://www.pradoresort.com/restaurant/"><button>Learn More</a></button></a>
+      </div>
+    </div>
+    <div class="card" data-name="bars">
+      <img src="images/buna park.png" alt="bars">
+      <div class="card_body">
+        <h6 class="card_title">Buna Park</h6>
+        <p class="card_text">Shkoder , Albania</p>
+        <a href="https://buna-park.al/index.html"><button>Learn More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+    <br>
+  <footer>
+    <h4> Travel Vision </h4>
+    <h1 class="display-6">We can trip together !</h1>
+    <br>
+    <h5> Please write here your email to notificate for more detail ...</h4>
+    <form>
+    <input type="email" id="email" name="email" value="Your Email"> <button type="button" class="btn btn-success" value="subscribe">Subscribe</button>
+    <br>
+    <div class="nav">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <a href="home.html">Home</a>
+          </div>
+          <div class="col">
+            <a href="about.html">About</a>
+            <p>Who are I?</p>
+            <p>What is this page for ?</p>
+            <p>Who is it ?</p>
+          </div>
+          <div class="col">
+            <a href="destinations.html">Destinations</a>
+            <p>Europe</p>
+            <p>Asia</p>
+            <p>Africa</p>
+            <p>Australia</p>
+            <p>America</p>
+            <p>Antarctida</p>
+            <p>Australia</p>
+            <p>Oceania</p>
+            <p>Season Travel</p>
+          </div>
+          <div class="col">
+            <a href="tips.html">Tips for Trips</a>
+            <p>Recomandation</p>
+            <p>Sugerations</p>
+            <p>Accomandation</p>
+            <p>Emergency Calls</p>
+          </div>
+          <div class="col">
+            <a href="aventures.html">Aventures</a>
+            <p>Event</p>
+            <p>News</p>
+            <p>Fashion & Mode</p>
+          </div>
+          <div class="col">
+            <a href="contact.html">Contact Us</a>
+            <p>Contact Us</p>
+            <p>Work with Us</p>
+            <p>Become a Guest Author</p>
+            <p>Request a Blog Post</p>
+          </div>
+          <div class="col">
+            <a href="tells.html">Your Tells</a>
+            <p>Tell us Your Experience</p>   
+          </div>
+        </div>
+      </div>                    
+  </div>
+  <div class="privacy_social">
+    <div class="privacy">
+      <a href="">Disloure & Privacy Police</a> 
+    </div>
+    <div class="social_bar">
+      <i class="fa-brands fa-facebook"><a href="#"><img src="images/facebook.svg" width="20px" height=20px"></a></i><i class="fa-brands fa-instagram"><a href="#"><img src="images/instagram.svg" width="20px" height="20px"></a></i><i class="fa-brands fa-pinterest"><a href="#"><img src="images/pinterest.svg" width="20px" height="20px"></a></i><i class="fa-brands fa-youtube"><a href="#"><img src="images/youtube.svg" width="20px" height="20px"></a></i><i class="fa-brands fa-twitter"><a href="#"><img src="images/twitter.svg" width="20px" height="20px"></a></i>
+    </div>
+    </div>
+  <br>
+  <div class="copyright">
+    <h6>Copyright &copy; 2024 Travel Vision | Sara Xhafa</h6>
+  </div>                                                      
+  </footer>
+  </div>
+  
+  <script src="javascript/accomodation.js"></script>
+  <script src="/javascript/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

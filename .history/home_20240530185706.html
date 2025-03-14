@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Vision</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/facebook?f=brands&s=solid&pc=%2363E6BE">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div id="navbar-right">
+      <a class="active" href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="tells.html">Tells</a>
+    </div>
+    <div class="logo">
+      <img src="images/logo.jpg" height="150" width="150" id="logo" alt="logo"></a>
+    </div>
+    <div id="navbar-left">
+      <a href="tips.html">Tips for Trips</a>
+      <a href="aventures.html">Aventures</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <!--Bootstrap Carousel-->
+
+  <body>
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/wallpaper.jpeg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+            <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/photo-wellcome.jpg" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+            <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book a tour</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/photo 8.jpg" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+            <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book a tour</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/wellcome.jpg" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+            <p class="display-1 fw-bolder text-capitalize">Sara</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book a tour</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/photo 9.jpg" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+            <p class="display-1 fw-bolder text-capitalize">Sara</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book a tour</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="filter_buttons">
+        <!--Filter Buttons-->
+        <button class="activeF" data-name="all">All Posts</button>
+        <button data-name="destinations">Destinations</button>
+        <button data-name="tells">Tells</button>
+        <button data-name="Tips">Tips</button>
+        <button data-name="aventures">Aventures</button>
+      </div>
+      <!--Images Cards-->
+      <div class="filterable_cards">
+        <div class="card" data-name="destinations">
+          <img src="images/photo 11.jpg" alt="destinations">
+          <div class="card_body">
+            <h6 class="card_title">Destinations</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="destinations">
+          <img src="images/photo 9.jpg" alt="destinations">
+          <div class="card_body">
+            <h6 class="card_title">Destinations</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="tells">
+          <img src="images/photo 12.jpg" alt="tells">
+          <div class="card_body">
+            <h6 class="card_title">Tells</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="tells">
+          <img src="images/photo 11.jpg" alt="tells">
+          <div class="card_body">
+            <h6 class="card_title">Tells</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="tips">
+          <img src="images/photo 5.jpg" alt="tips">
+          <div class="card_body">
+            <h6 class="card_title">Tips for Trips</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="tips">
+          <img src="images/photo 3.jpg" alt="tips">
+          <div class="card_body">
+            <h6 class="card_title">Tips for Trips</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="aventures">
+          <img src="images/photo 4.jpg" alt="aventures">
+          <div class="card_body">
+            <h6 class="card_title">Aventures</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+        <div class="card" data-name="aventures">
+          <img src="images/photo 3.jpg" alt="aventures">
+          <div class="card_body">
+            <h6 class="card_title">Destinations</h6>
+            <p class="card_text">Lorem ipsum, dolor ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <div class="footer">
+      <br>
+      <footer>
+        <h4> Travel Vision </h4>
+        <h1 class="display-6">We can trip together !</h1>
+        <br>
+        <h5> Please write here your email to notificate for more detail ...</h5>
+          <form>
+            <input type="email" id="email" name="email" value="Your Email"> <button type="button"
+              class="btn btn-success" value="subscribe">Subscribe</button>
+            <br>
+            <div class="nav">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <a href="home.html">Home</a>
+                  </div>
+                  <div class="col">
+                    <a href="about.html">About</a>
+                    <p>Who are I?</p>
+                    <p>What is this page for ?</p>
+                    <p>Who is it ?</p>
+                  </div>
+                  <div class="col">
+                    <a href="destinations.html">Destinations</a>
+                    <p>Europe</p>
+                    <p>Asia</p>
+                    <p>Africa</p>
+                    <p>Australia</p>
+                    <p>America</p>
+                    <p>Antarctida</p>
+                    <p>Australia</p>
+                    <p>Season Travel</p>
+                  </div>
+                  <div class="col">
+                    <a href="tips.html">Tips for Trips</a>
+                    <p>Recomandation</p>
+                    <p>Sugerations</p>
+                    <p>Accomandation</p>
+                    <p>Emergency Calls</p>
+                  </div>
+                  <div class="col">
+                    <a href="aventures.html">Aventures</a>
+                    <p>Event</p>
+                    <p>News</p>
+                    <p>Fashion & Mode</p>
+                  </div>
+                  <div class="col">
+                    <a href="contact.html">Contact Us</a>
+                    <p>Contact Us</p>
+                    <p>Work with Us</p>
+                    <p>Become a Guest Author</p>
+                    <p>Request a Blog Post</p>
+                  </div>
+                  <div class="col">
+                    <a href="tells.html">Your Tells</a>
+                    <p>Tell us Your Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="privacy_social">
+              <div class="privacy">
+                <a href="">Disloure & Privacy Police</a>
+              </div>
+              <div class="social_bar">
+                <i class="fa-brands fa-facebook"><a href="#"><img src="images/facebook.svg" width="20px"
+                      height=20px"></a></i><i class="fa-brands fa-instagram"><a href="#"><img src="images/instagram.svg"
+                      width="20px" height="20px"></a></i><i class="fa-brands fa-pinterest"><a href="#"><img
+                      src="images/pinterest.svg" width="20px" height="20px"></a></i><i class="fa-brands fa-youtube"><a
+                    href="#"><img src="images/youtube.svg" width="20px" height="20px"></a></i><i
+                  class="fa-brands fa-twitter"><a href="#"><img src="images/twitter.svg" width="20px"
+                      height="20px"></a></i>
+              </div>
+            </div>
+            <br>
+            <div class="copyright">
+              <h6>Copyright &copy; 2024 Travel Vision | Sara Xhafa</h6>
+            </div>
+      </footer>
+    </div>
+    <script src="javascript/home.js" defer></script>
+  </body>
+
+</html>
